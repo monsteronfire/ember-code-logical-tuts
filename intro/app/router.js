@@ -6,6 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('first', { path: 'first' });
+  this.route('databinding', { path: 'databinding' });
 });
 
 export default Router;

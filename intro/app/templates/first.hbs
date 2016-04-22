@@ -1,0 +1,7 @@
+{{!-- 
+This action, clickHandled, can handled in either (i) routes/first.js; or (ii) controller/first.js
+* Ember looks in the controller first and if it can't find the action, it looks in route
+* firstName property will be handled in the controller. Because controllers control data
+* Ember Flow: define a route in the router.js --> loads associated Route (decorates controller) --> if there is a model in the route, pass it to: --> Controller --> Template
+--}}
+<p {{ action "clickHandled" }}>This is the {{ firstName }}'s first route.</p>
