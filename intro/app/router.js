@@ -8,8 +8,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('first', { path: 'first' });
   this.route('databinding', { path: 'databinding' });
-  this.route('firstModel', { path: 'firstModel' });
-  this.route('secondModel', { path: 'secondModel' });
+  this.route('firstModel', { path: 'first-model' });
+  this.route('secondModel', { path: 'second-model' });
 });
 
 export default Router;
