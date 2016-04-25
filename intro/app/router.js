@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('databinding', { path: 'databinding' });
   this.route('firstModel', { path: 'first-model' });
   this.route('secondModel', { path: 'second-model' });
+  this.route('first-page', { path: 'first-page' });
+  this.route('second-page', { path: 'second-page' });
+
+  this.route('index', { path: '/' });
+  this.route('about', { path: 'about' });
 });
 
 export default Router;
