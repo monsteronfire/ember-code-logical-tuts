@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('first-page', { path: 'first-page' });
   this.route('second-page', { path: 'second-page' });
 
+  this.route('my-route', { path: 'my-route' });
+
   this.route('index', { path: '/' });
   this.route('about', { path: 'about' });
 });
