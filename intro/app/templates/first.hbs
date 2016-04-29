@@ -1,3 +1,14 @@
 <a href="" {{ action "showAlert" }}>showAlert</a>
 <br>
 <a href="" {{ action "setAnotherActor" }}>setAnotherActor</a>
+
+<p>
+  {{girlsName}} {{input value=girlsName}}
+</p>
+
+<button {{action 'addNewItem'}}>Update Model</button>
+<ul>
+  {{#each model as |item|}}
+    <li>{{item}}</li>
+  {{/each}}
+</ul>

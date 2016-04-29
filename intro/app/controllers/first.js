@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  girlsName: 'Christina',
   firstName: 'Johnny',
   lastName: 'Depp',
   actions: {
@@ -23,6 +24,10 @@ export default Ember.Controller.extend({
       var newActor = this.get('firstName') + ' ' + this.get('lastName');
 
       alert('The other actor is ' + newActor);
+    },
+
+    addNewItem: function() {
+       this.get('model').pushObject('newItem');
     }
   }
 });
