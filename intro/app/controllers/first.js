@@ -27,6 +27,9 @@ export default Ember.Controller.extend({
     },
 
     addNewItem: function() {
+      // Got the error: ember Uncaught TypeError: Cannot read property 'pushObject' of null
+      //This happened because the 'model' had not been declared in the route
+      // So the line below was getting 'null' or something that didn't exist
        this.get('model').pushObject('newItem');
     }
   }
